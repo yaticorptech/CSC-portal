@@ -33,7 +33,7 @@ export default function LoginPage() {
           <div className="p-3 bg-blue-100 rounded-full mb-3">
             <ShieldCheck className="h-8 w-8 text-blue-600" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-800">Cyber Center Login</h1>
+          <h1 className="text-2xl font-bold text-gray-800">CSC Center Login</h1>
           <p className="text-sm text-gray-500 mt-1">Access your center dashboard</p>
         </div>
 

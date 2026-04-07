@@ -5,21 +5,21 @@ const AuthContext = createContext(null);
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(() => {
     try {
-      return JSON.parse(localStorage.getItem("cc_user")) || null;
+      return JSON.parse(localStorage.getItem("csc_user")) || null;
     } catch {
       return null;
     }
   });
 
   const login = (token, userData) => {
-    localStorage.setItem("cc_token", token);
-    localStorage.setItem("cc_user", JSON.stringify(userData));
+    localStorage.setItem("csc_token", token);
+    localStorage.setItem("csc_user", JSON.stringify(userData));
     setUser(userData);
   };
 
   const logout = () => {
-    localStorage.removeItem("cc_token");
-    localStorage.removeItem("cc_user");
+    localStorage.removeItem("csc_token");
+    localStorage.removeItem("csc_user");
     setUser(null);
   };
 

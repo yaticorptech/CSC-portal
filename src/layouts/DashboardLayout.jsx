@@ -29,7 +29,7 @@ export default function DashboardLayout() {
       >
         <div className="flex items-center justify-between p-5 border-b">
           <div>
-            <h1 className="text-lg font-bold text-blue-700">Cyber Center</h1>
+            <h1 className="text-lg font-bold text-blue-700">CSC Center</h1>
             <p className="text-xs text-gray-400">Partner Portal</p>
           </div>
           <button className="md:hidden" onClick={() => setOpen(false)}>
@@ -81,7 +81,7 @@ export default function DashboardLayout() {
           <button onClick={() => setOpen(true)}>
             <Menu size={22} />
           </button>
-          <h1 className="font-semibold text-gray-700">Cyber Center Portal</h1>
+          <h1 className="font-semibold text-gray-700">CSC Center Portal</h1>
         </header>
         <main className="flex-1 overflow-y-auto p-6">
           <Outlet />

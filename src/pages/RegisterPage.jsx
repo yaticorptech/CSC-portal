@@ -50,7 +50,7 @@ export default function RegisterPage() {
           <div className="p-3 bg-blue-100 rounded-full mb-3">
             <Building2 className="h-8 w-8 text-blue-600" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-800">Register Cyber Center</h1>
+          <h1 className="text-2xl font-bold text-gray-800">Register CSC Center</h1>
           <p className="text-sm text-gray-500 mt-1">Partner with us to offer AI courses</p>
         </div>
 
@@ -79,7 +79,7 @@ export default function RegisterPage() {
         <p className="text-sm font-semibold text-gray-700 mb-3">Step 2 — Fill Registration Details</p>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
           {[
-            { name: "name", label: "Center Name", placeholder: "ABC Cyber Center" },
+            { name: "name", label: "Center Name", placeholder: "ABC CSC Center" },
             { name: "owner_name", label: "Owner Name", placeholder: "John Doe" },
             { name: "email", label: "Email", type: "email", placeholder: "center@example.com" },
             { name: "phone", label: "Phone", placeholder: "+91 9876543210" },
