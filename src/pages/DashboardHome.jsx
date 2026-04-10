@@ -39,6 +39,12 @@ export default function DashboardHome() {
           Welcome, {user?.center?.owner_name || "Admin"}
         </h2>
         <p className="text-sm text-gray-500">{user?.center?.name}</p>
+        {user?.center?.center_id && (
+          <div className="inline-flex items-center gap-2 mt-2 bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-lg">
+            <span className="text-xs text-blue-500 font-medium">Center ID</span>
+            <span className="font-mono text-sm font-bold text-blue-700">{user.center.center_id}</span>
+          </div>
+        )}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
