@@ -117,6 +117,10 @@ export default function RegisterPage() {
           Already registered?{" "}
           <Link to="/login" className="text-blue-600 hover:underline font-medium">Login here</Link>
         </p>
+
+        <div className="mt-4 bg-blue-50 border border-blue-200 rounded-xl px-4 py-3 text-xs text-blue-700">
+          <strong>Note:</strong> After submitting, your application will be reviewed. Once approved, your login credentials will be sent to your registered email address.
+        </div>
       </div>
     </div>
   );
